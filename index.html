@@ -2,12 +2,16 @@
 <html>
 <head>
     <title>Musique Automatique</title>
-    <meta http-equiv="refresh" content="0;url=Allezla3.mp3">
 </head>
 <body>
-    <audio autoplay loop>
-        <source src="Allezla3.mp3" type="audio/mpeg">
-        Votre navigateur ne supporte pas l'élément audio.
-    </audio>
+    <script>
+        // Crée l'élément audio
+        var audio = new Audio("Allezla3.mp3");
+        audio.loop = true;
+        audio.autoplay = true;
+        audio.play().catch(function(error) {
+            console.log("Autoplay bloqué, erreur :", error);
+        });
+    </script>
 </body>
 </html>
