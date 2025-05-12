@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Autoplay Test</title>
+    <title>Musique Automatique</title>
 </head>
 <body>
-    <script>
-        window.location.href = "https://dad7979.github.io/Musique-Embed/Allez%20la%203.mp3?autoplay=1&loop=1";
-    </script>
+    <audio autoplay loop>
+        <source src="https://dad7979.github.io/Musique-Embed/Allez%20la%203.mp3" type="audio/mpeg">
+        Votre navigateur ne supporte pas l'élément audio.
+    </audio>
 </body>
 </html>
