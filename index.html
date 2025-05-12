@@ -4,14 +4,9 @@
     <title>Musique Automatique</title>
 </head>
 <body>
-    <script>
-        // Crée l'élément audio
-        var audio = new Audio("Allezla3.mp3");
-        audio.loop = true;
-        audio.autoplay = true;
-        audio.play().catch(function(error) {
-            console.log("Autoplay bloqué, erreur :", error);
-        });
-    </script>
+    <audio autoplay loop>
+        <source src="./Allezla3.mp3" type="audio/mpeg">
+        Votre navigateur ne supporte pas l'élément audio.
+    </audio>
 </body>
 </html>
